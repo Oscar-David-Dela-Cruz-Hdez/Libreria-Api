@@ -1,0 +1,111 @@
+/* Variables CSS */
+:root {
+  --background-color: rgb(221, 221, 221);
+  --background: url('872784.jpg') center/cover no-repeat fixed;
+  --navbar-color: rgba(181, 94, 1, 0.514);
+  --footer-bg: rgba(128, 128, 128, 0.5);
+  --footer-image: url('https://i.pinimg.com/564x/61/3f/d1/613fd103afae7a295e032186be47e285.jpg');
+  --text-color: rgba(181, 94, 1, 0.514);
+  --box-shadow-color: rgb(174, 172, 172);
+  --books-card-max-height: 500px;
+  --blurred-background: blur(8px);
+}
+
+/* Estilos generales */
+body {
+  background: var(--background);
+  background-color: var(--background-color);
+  height: 100vh; 
+  font-family: 'Prompt', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* Estilos para el navbar */
+.navbar {
+  background: var(--navbar-color);
+}
+
+.navbar-brand {
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff;
+}
+
+/* Estilos para el formulario de búsqueda */
+form.d-flex {
+  margin-right: 20px;
+}
+
+#buscar-libro {
+  margin-right: 10px;
+}
+
+/* Estilos para la barra de categorías */
+li.nav-item.dropdown {
+  list-style: none;
+}
+
+.dropdown-menu {
+  background-color: var(--navbar-color);
+}
+
+.dropdown-item {
+  color: #fff;
+}
+
+/* Estilos para el offcanvas */
+.offcanvas-header {
+  background-color: var(--navbar-color);
+}
+
+/* Estilos para el footer */
+.footer {
+  background-color: var(--footer-bg);
+  background-image: var(--footer-image);
+  backdrop-filter: var(--blurred-background);
+  height: 200px;
+  margin-top: 80px;
+}
+
+/* Estilos para la sección de libros */
+.books-card {
+  overflow-y: auto;
+  display: flex;
+  max-height: var(--books-card-max-height);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.books-card::-webkit-scrollbar {
+  display: none;
+}
+
+/* Estilos para la sección de detalles */
+.contener {
+  margin-top: 80px;
+  margin-left: 80px;
+  margin-right: 100px;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: var(--box-shadow-color) 0px 0px 100px;
+}
+
+.titulo {
+  color: #a463027e;
+}
+
+.parrafo1,
+.parrafo2 {
+  margin: 20px 0;
+}
+
+.portada-detalle {
+  /* Agrega estilos si es necesario para la portada */
+}
